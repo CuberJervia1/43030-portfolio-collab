@@ -1,0 +1,137 @@
+{
+  "timestamp": "2026-05-12T17:42:30.059456",
+  "backend": "ollama",
+  "model": "qwen2.5:7b",
+  "total_tokens": 3697,
+  "results": [
+    {
+      "result": {
+        "email_id": "01_paypal_lookalike",
+        "verdict": {
+          "verdict": "phishing",
+          "confidence": 0.95,
+          "primary_indicators": [
+            "Sender domain impersonation or lookalike domains",
+            "Suspicious or shortened links"
+          ],
+          "reasoning": "The sender domain is a lookalike of PayPal, and the link provided is suspicious and likely malicious.",
+          "recommended_action": "block"
+        },
+        "error": null,
+        "tokens": 479
+      }
+    },
+    {
+      "result": {
+        "email_id": "02_o365_credential_harvest",
+        "verdict": {
+          "verdict": "phishing",
+          "confidence": 0.9,
+          "primary_indicators": [
+            "Sender domain impersonation (lookalike domains)",
+            "Credential harvesting, login, password requests"
+          ],
+          "reasoning": "The email uses a lookalike domain and requests sensitive information such as credentials, which are common tactics in phishing scams.",
+          "recommended_action": "block"
+        },
+        "error": null,
+        "tokens": 460
+      }
+    },
+    {
+      "result": {
+        "email_id": "03_hr_bonus_scam",
+        "verdict": {
+          "verdict": "phishing",
+          "confidence": 0.8,
+          "primary_indicators": [
+            "Sender domain impersonation (lookalike domains)",
+            "Generic greetings such as Dear Employee",
+            "Suspicious or shortened links",
+            "Requests for secrecy or confidentiality"
+          ],
+          "reasoning": "The email uses a lookalike domain, has a generic greeting, and includes a suspicious link. These are common tactics used in phishing attempts.",
+          "recommended_action": "block"
+        },
+        "error": null,
+        "tokens": 485
+      }
+    },
+    {
+      "result": {
+        "email_id": "04_apple_id_lookalike",
+        "verdict": {
+          "verdict": "phishing",
+          "confidence": 0.9,
+          "primary_indicators": [
+            "Sender domain impersonation or lookalike domains",
+            "Suspicious or shortened links"
+          ],
+          "reasoning": "The email uses a sender domain that is a close imitation of Apple's, and the link provided is suspicious and likely malicious.",
+          "recommended_action": "block"
+        },
+        "error": null,
+        "tokens": 490
+      }
+    },
+    {
+      "result": {
+        "email_id": "01_github_pr",
+        "verdict": {
+          "verdict": "benign",
+          "confidence": 0.95,
+          "primary_indicators": [],
+          "reasoning": "The email appears to be a legitimate notification from GitHub about a pull request. There are no suspicious elements or requests for personal information.",
+          "recommended_action": "deliver"
+        },
+        "error": null,
+        "tokens": 462
+      }
+    },
+    {
+      "result": {
+        "email_id": "02_uts_library",
+        "verdict": {
+          "verdict": "benign",
+          "confidence": 0.9,
+          "primary_indicators": [],
+          "reasoning": "The email appears to be a legitimate reminder from the UTS Library with accurate information and a link to their official website.",
+          "recommended_action": "deliver"
+        },
+        "error": null,
+        "tokens": 437
+      }
+    },
+    {
+      "result": {
+        "email_id": "03_personal_email",
+        "verdict": {
+          "verdict": "benign",
+          "confidence": 0.95,
+          "primary_indicators": [],
+          "reasoning": "The email appears to be a friendly request for coffee and does not contain any suspicious elements such as links, requests for personal information, or urgent language.",
+          "recommended_action": "deliver"
+        },
+        "error": null,
+        "tokens": 414
+      }
+    },
+    {
+      "result": {
+        "email_id": "04_optus_bill",
+        "verdict": {
+          "verdict": "suspicious",
+          "confidence": 0.6,
+          "primary_indicators": [
+            "display name mismatch",
+            "suspicious link"
+          ],
+          "reasoning": "The sender's display name does not match the domain, and the URL provided is suspicious as it redirects to a generic Optus page rather than directly to My Account.",
+          "recommended_action": "warn_user"
+        },
+        "error": null,
+        "tokens": 470
+      }
+    }
+  ]
+}
